@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>長庚大學智慧型語言演算法實驗室</title>
+    <title data-i18n="site_title">長庚大學智慧型語言演算法實驗室</title>
+    <script src="js/i18n.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -437,24 +438,25 @@
             <nav>
                 <div class="logo">ILA<span>Lab</span></div>
                 <ul class="nav-links">
-                    <li><a href="#about">關於我們</a></li>
-                    <li><a href="#research">研究主題</a></li>
-                    <li><a href="#team">團隊成員</a></li>
+                    <li><a href="#about" data-i18n="nav.about">關於我們</a></li>
+                    <li><a href="#research" data-i18n="nav.research">研究主題</a></li>
+                    <li><a href="#team" data-i18n="nav.team">研究團隊</a></li>
                     <!-- <li><a href="#publications">發表論文</a></li> -->
-                    <li><a href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao">發表論文</a></li>
-                    <li><a href="#contact">聯絡我們</a></li>
+                    <li><a href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao" data-i18n="nav.pub">發表論文</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">聯絡我們</a></li>
+                    <li><a href="#" id="langSwitch">English</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>智慧型語言演算法實驗室</h1>
+                <h1 data-i18n="home.name">智慧型語言演算法實驗室</h1>
                 <p class="typewriter">This is Intelligent Language Algorithms Laboratory (ILA Lab).</p>
-                <a href="#research" class="btn">了解我們的研究</a>
+                <a href="#research" class="btn" data-i18n="home.button">了解我們的研究</a>
             </div>
         </div>
     </section>
@@ -462,24 +464,24 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>關於我們</h2>
-            <p>智慧型語言演算法實驗室 (Intelligent Language Algorithms Laboratory) 位於長庚大學人工智慧學系，成立於2025年二月。作為一個年輕且充滿活力的研究團隊，我們專注於自然語言處理的前沿研究，並發表頂尖的論文。</p>
+            <h2 data-i18n="about.header">關於我們</h2>
+            <p data-i18n="about.description1">智慧型語言演算法實驗室 (Intelligent Language Algorithms Laboratory) 位於長庚大學人工智慧學系，成立於2025年二月。作為一個年輕且充滿活力的研究團隊，我們專注於自然語言處理的前沿研究，並發表頂尖的論文。</p>
             <!-- <p>我們的團隊結合了理論與實踐，旨在推動科學邊界並培養下一代科學家。我們的研究得到了[資助機構]的支持。</p> -->
-            <p>我們的研究方法結合了深度類神經網路、大型語言模型，並與林口長庚醫院、國立陽明交通大學密切合作，以跨學科的視角解決複雜問題。</p>
+            <p data-i18n="about.description2">我們的研究方法結合了深度類神經網路、大型語言模型，並與林口長庚醫院、國立陽明交通大學密切合作，以跨學科的視角解決複雜問題。</p>
         </div>
     </section>
 
     <!-- Research Projects -->
     <section id="research" class="research">
         <div class="container">
-            <h2>研究方向</h2>
+            <h2 data-i18n="research.header">研究方向</h2>
             <div class="projects">
                 <div class="project-card">
                     <div class="project-img" style="
                         background-image: url('src/imgs/directions/natural-language-processing.png');
                     "></div>
                     <div class="project-content">
-                        <h3>自然語言處理</h3>
+                        <h3 data-i18n="research.nlp">自然語言處理</h3>
                         <!-- <p>此項目探索[研究主題]的新方法，旨在解決[問題或挑戰]。我們的創新方法結合了[技術或方法]，為該領域提供新視角。</p> -->
                     </div>
                 </div>
@@ -487,7 +489,7 @@
                 <div class="project-card">
                     <div class="project-img" style="background-image: url('src/imgs/directions/deep-learning.png');"></div>
                     <div class="project-content">
-                        <h3>大型語言模型</h3>
+                        <h3 data-i18n="research.llm">大型語言模型</h3>
                         <!-- <p>此項目聚焦於[研究主題]，通過[方法或技術]探索[現象或問題]。我們的初步結果顯示[簡要發現]，這將為[應用領域]帶來重大影響。</p> -->
                     </div>
                 </div>
@@ -495,7 +497,7 @@
                 <div class="project-card">
                     <div class="project-img" style="background-image: url('src/imgs/directions/donor-consent-form.png');"></div>
                     <div class="project-content">
-                        <h3>Medical NLP</h3>
+                        <h3 data-i18n="research.mednlp">Medical NLP</h3>
                         <!-- <p>在此項目中，我們研究[研究主題]，重點關注其在[應用領域]的潛在應用。結合[技術或理論]，我們開發了新的理解框架。</p> -->
                     </div>
                 </div>
@@ -506,15 +508,15 @@
     <!-- Team Members -->
     <section id="team" class="team">
         <div class="container">
-            <h2>研究團隊</h2>
+            <h2 data-i18n="team.header">研究團隊</h2>
             <div class="team-grid">
                 <div class="team-member">
                     <img src="src/imgs/members/Ying-Jia-Lin.jpg" alt="教授照片" class="member-img">
-                    <h3 class="member-name">林英嘉</h3>
-                    <p class="member-title">助理教授 / 實驗室主持人</p>
+                    <h3 data-i18n="team.PI" class="member-name">林英嘉</h3>
+                    <p data-i18n="team.PI_pos" class="member-title">助理教授 / 實驗室主持人</p>
                     <!-- <p>專長於[專業領域]，擁有[教育背景]。研究興趣包括[研究興趣]。</p> -->
                     <p>
-                        <a href="https://mcps5601.github.io/about/" style="color: var(--primary); text-decoration: none;">
+                        <a data-i18n="team.PI_page" href="https://mcps5601.github.io/about/" style="color: var(--primary); text-decoration: none;">
                             <span style="font-size: 1.2rem;">&#127968;</span> 個人網頁
                         </a>
                         <a href="https://github.com/mcps5601" style="color: var(--primary); text-decoration: none;">
@@ -525,15 +527,15 @@
                 
                 <div class="team-member">
                     <img src="src/imgs/members/Yen-Kai-Chang.png" alt="專題生照片" class="member-img">
-                    <h3 class="member-name">張晏愷</h3>
-                    <p class="member-title">專題生 / 生醫系大二</p>
+                    <h3 data-i18n="team.member1" class="member-name">張晏愷</h3>
+                    <p data-i18n="team.member1_title" class="member-title">專題生 / 生醫系</p>
                     <!-- <p>專注於[研究方向]，探索[研究領域]中的創新解決方案。</p> -->
                 </div>
                 
                 <div class="team-member">
                     <img src="src/imgs/members/Chien-Feng-Wu.jpg" alt="專題生照片" class="member-img">
-                    <h3 class="member-name">吳建鋒</h3>
-                    <p class="member-title">專題生 / 醫學系大二</p>
+                    <h3 data-i18n="team.member2" class="member-name">吳建鋒</h3>
+                    <p data-i18n="team.member2_title" class="member-title">專題生 / 醫學系</p>
                     <!-- <p>研究[研究主題]，特別關注[具體關注點]。具有[相關技能]背景。</p> -->
                 </div>
                 
@@ -578,23 +580,23 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>聯絡我們</h2>
+            <h2 data-i18n="contact.header">聯絡我們</h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div>
-                            <h3>地址</h3>
-                            <p>長庚大學 人工智慧學系</p>
-                            <p>管理大樓14F B1412室</p>
-                            <p>33302桃園市龜山區文化一路259號</p>
+                            <h3 data-i18n="contact.addr_name">地址</h3>
+                            <p data-i18n="contact.school">長庚大學 人工智慧學系</p>
+                            <p data-i18n="contact.office">管理大樓14F B1412室</p>
+                            <p data-i18n="contact.address">33302桃園市龜山區文化一路259號</p>
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
                         <div>
-                            <h3>電子郵件</h3>
+                            <h3 data-i18n="contact.email_name">電子郵件</h3>
                             <p>ilalab.cgu@gmail.com</p>
                         </div>
                     </div>
@@ -602,7 +604,7 @@
                     <div class="contact-item">
                         <div class="contact-icon">📞</div>
                         <div>
-                            <h3>電話</h3>
+                            <h3 data-i18n="contact.phone_name">電話</h3>
                             <p>03-2118800 #2547</p>
                         </div>
                     </div>
@@ -662,30 +664,30 @@
                 </div> -->
                 
                 <div class="footer-col">
-                    <h3>快速連結</h3>
+                    <h3 data-i18n="links.quick_links">快速連結</h3>
                     <ul class="footer-links">
-                        <li><a href="#about">關於我們</a></li>
-                        <li><a href="#research">研究主題</a></li>
-                        <li><a href="#team">團隊成員</a></li>
+                        <li><a data-i18n="links.about" href="#about">關於我們</a></li>
+                        <li><a data-i18n="links.research" href="#research">研究主題</a></li>
+                        <li><a data-i18n="links.team" href="#team">團隊成員</a></li>
                         <!-- <li><a href="#publications">發表論文</a></li> -->
-                        <li><a href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao">發表論文</a></li>
-                        <li><a href="#contact">聯絡我們</a></li>
+                        <li><a data-i18n="links.pub" href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao">發表論文</a></li>
+                        <li><a data-i18n="links.contact" href="#contact">聯絡我們</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3>相關資源</h3>
+                    <h3 data-i18n="links.resources">相關資源</h3>
                     <ul class="footer-links">
-                        <li><a href="https://www.cgu.edu.tw/">大學官網</a></li>
-                        <li><a href="https://www.cgu.edu.tw/ai">系所網頁</a></li>
-                        <li><a href="https://2024.aclweb.org/program/main_conference_papers/">學術資源</a></li>
+                        <li><a data-i18n="links.uni_web" href="https://www.cgu.edu.tw/">大學官網</a></li>
+                        <li><a data-i18n="links.dept_web" href="https://www.cgu.edu.tw/ai">系所網頁</a></li>
+                        <li><a data-i18n="links.academics" href="https://2024.aclweb.org/program/main_conference_papers/">學術資源</a></li>
                         <!-- <li><a href="#">加入我們</a></li> -->
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                &copy; 2025 智慧型語言演算法實驗室. 版權所有.<br>
+                <p data-i18n="copyright.owner">&copy; 2025 智慧型語言演算法實驗室 版權所有</p>
                 <a href="https://www.flaticon.com/free-icons/natural-language-processing" title="natural language processing icons">Natural language processing icons created by Freepik - Flaticon</a><br>
                 <a href="https://www.flaticon.com/free-icons/deep-learning" title="deep learning icons">Deep learning icons created by Becris - Flaticon</a><br>
                 <a href="https://www.flaticon.com/free-icons/donor-consent-form" title="donor-consent-form icons">Donor-consent-form icons created by Freepik - Flaticon</a>
