@@ -1,59 +1,61 @@
 {
-    "site_title": "長庚大學智慧型語言演算法實驗室",
-    "nav": {
-      "about": "關於我們",
-      "research": "研究主題",
-      "team": "研究團隊",
-      "pub": "發表論文",
-      "contact": "聯絡我們"
-    },
-    "home": {
-        "name": "智慧型語言演算法實驗室",
-        "button": "了解我們的研究"
-      },
-    "about": {
-      "header": "關於我們",
-      "title": "智慧型語言演算法實驗室",
-      "description1": "智慧型語言演算法實驗室 (Intelligent Language Algorithms Laboratory) 位於長庚大學人工智慧學系，成立於2025年二月。作為一個年輕且充滿活力的研究團隊，我們專注於自然語言處理的前沿研究，並發表頂尖的論文。",
-      "description2": "我們的研究方法結合了深度類神經網路、大型語言模型，並與林口長庚醫院、國立陽明交通大學密切合作，以跨學科的視角解決複雜問題。"
-    },
-    "research": {
-        "header": "研究方向",
-        "nlp": "自然語言處理",
-        "llm": "大型語言模型",
-        "mednlp": "醫學文本任務"
-    },
-    "team": {
-      "header": "研究團隊",
-      "PI_pos": "助理教授 / 實驗室主持人",
-      "PI_page": "🏠個人網頁",
-      "member1": "張晏愷",
-      "member1_title": "專題生 / 生醫系",
-      "member2": "吳建鋒",
-      "member2_title": "專題生 / 醫學系"
-    },
-    "contact": {
-      "header": "聯絡我們",
-      "addr_name": "地址",
-      "school": "長庚大學 人工智慧學系",
-      "office": "管理大樓14F B1412室",
-      "address": "33302桃園市龜山區文化一路259號",
-      "email_name": "電子郵件",
-      "phone_name": "電話"
-    },
-    "links": {
-      "quick_links": "快速連結",
-      "about": "關於我們",
-      "research": "研究主題",
-      "team": "研究團隊",
-      "pub": "發表論文",
-      "contact": "聯絡我們",
-      "resources": "相關資源",
-      "uni_web": "大學官網",
-      "dept_web": "系所官網",
-      "academics": "學術網頁"
-    },
-    "copyright": {
-      "owner": "© 2025 智慧型語言演算法實驗室 版權所有"
-    }
+  "site_title": "長庚大學智慧型語言演算法實驗室",
+  "nav": {
+    "about": "關於我們",
+    "research": "研究主題",
+    "team": "研究團隊",
+    "pub": "發表論文",
+    "contact": "聯絡我們"
+  },
+  "home": {
+    "name": "智慧型語言演算法實驗室",
+    "button": "了解我們的研究"
+  },
+  "about": {
+    "header": "關於我們",
+    "title": "智慧型語言演算法實驗室",
+    "description1": "智慧型語言演算法實驗室 (Intelligent Language Algorithms Laboratory) 位於長庚大學人工智慧學系，成立於2025年二月。作為一個年輕且充滿活力的研究團隊，我們專注於自然語言處理的前沿研究，並發表頂尖的論文。",
+    "description2": "我們的研究方法結合了深度類神經網路、大型語言模型，並與林口長庚醫院、國立陽明交通大學密切合作，以跨學科的視角解決複雜問題。"
+  },
+  "research": {
+    "header": "研究方向",
+    "nlp": "自然語言處理",
+    "llm": "大型語言模型",
+    "mednlp": "醫學文本任務"
+  },
+  "team": {
+    "header": "研究團隊",
+    "PI_pos": "助理教授 / 實驗室主持人",
+    "PI_page": "🏠個人網頁",
+    "member1": "張晏愷",
+    "member1_title": "專題生 / 生醫系",
+    "member2": "吳建鋒",
+    "member2_title": "專題生 / 醫學系",
+    "member3": "張鴻毅",
+    "member3_title": "專題生 / AI 系"
+  },
+  "contact": {
+    "header": "聯絡我們",
+    "addr_name": "地址",
+    "school": "長庚大學 人工智慧學系",
+    "office": "管理大樓14F B1412室",
+    "address": "33302桃園市龜山區文化一路259號",
+    "email_name": "電子郵件",
+    "phone_name": "電話"
+  },
+  "links": {
+    "quick_links": "快速連結",
+    "about": "關於我們",
+    "research": "研究主題",
+    "team": "研究團隊",
+    "pub": "發表論文",
+    "contact": "聯絡我們",
+    "resources": "相關資源",
+    "uni_web": "大學官網",
+    "dept_web": "系所官網",
+    "academics": "學術網頁"
+  },
+  "copyright": {
+    "owner": "© 2025 智慧型語言演算法實驗室 版權所有"
   }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         :root {
             --primary: #2962ff;
             --primary-light: #768fff;
@@ -20,91 +21,91 @@
             --text: #444;
             --light: #f5f5f5;
         }
-        
+
         body {
             color: var(--text);
             line-height: 1.6;
             background-color: white;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         /* Navigation */
         header {
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--dark);
             text-decoration: none;
         }
-        
+
         .logo span {
             color: var(--primary);
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 2rem;
         }
-        
+
         .nav-links a {
             text-decoration: none;
             color: var(--dark);
             font-weight: 500;
             transition: color 0.3s;
         }
-        
+
         .nav-links a:hover {
             color: var(--primary);
         }
-        
+
         /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(255,255,255,0.95) 50%, rgba(255,255,255,0.8) 100%), url('/api/placeholder/1200/800') center/cover no-repeat;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.8) 100%), url('/api/placeholder/1200/800') center/cover no-repeat;
             margin-top: 60px;
         }
-        
+
         .hero-content {
             max-width: 700px;
         }
-        
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
             color: var(--dark);
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 0.8rem 2rem;
@@ -115,20 +116,24 @@
             font-weight: 500;
             transition: background-color 0.3s;
         }
-        
+
         .btn:hover {
             background-color: var(--primary-light);
         }
-        
+
         /* About Section */
         section {
             padding: 5rem 0;
         }
-        
-        .about, .research, .team, .publications, .contact {
+
+        .about,
+        .research,
+        .team,
+        .publications,
+        .contact {
             scroll-margin-top: 70px;
         }
-        
+
         h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
@@ -136,7 +141,7 @@
             position: relative;
             display: inline-block;
         }
-        
+
         h2::after {
             content: '';
             position: absolute;
@@ -146,7 +151,7 @@
             bottom: -10px;
             left: 0;
         }
-        
+
         /* Research Projects */
         .projects {
             display: grid;
@@ -154,20 +159,20 @@
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .project-card {
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        
+
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
-        
+
         .project-img {
             height: 200px;
             background-size: cover;
@@ -175,16 +180,16 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
-        
+
         .project-content {
             padding: 1.5rem;
         }
-        
+
         .project-content h3 {
             margin-bottom: 1rem;
             color: var(--dark);
         }
-        
+
         /* Team Members */
         .team-grid {
             display: grid;
@@ -192,11 +197,11 @@
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .team-member {
             text-align: center;
         }
-        
+
         .member-img {
             width: 150px;
             height: 150px;
@@ -205,47 +210,47 @@
             margin-bottom: 1rem;
             border: 4px solid var(--primary-light);
         }
-        
+
         .member-name {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             color: var(--dark);
         }
-        
+
         .member-title {
             color: var(--primary);
             margin-bottom: 0.5rem;
         }
-        
+
         /* Publications */
         .publication {
             background-color: white;
             padding: 1.5rem;
             border-radius: 8px;
             margin-bottom: 1.5rem;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-        
+
         .publication:hover {
             transform: translateX(5px);
         }
-        
+
         .publication h3 {
             margin-bottom: 0.5rem;
             color: var(--dark);
         }
-        
+
         .authors {
             font-style: italic;
             margin-bottom: 0.5rem;
         }
-        
+
         .journal {
             color: var(--primary);
             font-weight: 500;
         }
-        
+
         /* Contact Form */
         .contact-grid {
             display: grid;
@@ -253,19 +258,19 @@
             gap: 3rem;
             margin-top: 3rem;
         }
-        
+
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
             gap: 1rem;
         }
-        
+
         .contact-icon {
             width: 50px;
             height: 50px;
@@ -277,34 +282,35 @@
             color: white;
             font-size: 1.2rem;
         }
-        
+
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
-        
+
         .form-group {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
         }
-        
+
         label {
             font-weight: 500;
         }
-        
-        input, textarea {
+
+        input,
+        textarea {
             padding: 0.8rem;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 1rem;
         }
-        
+
         textarea {
             min-height: 150px;
         }
-        
+
         /* Footer */
         footer {
             background-color: var(--dark);
@@ -312,25 +318,25 @@
             padding: 3rem 0;
             margin-top: 3rem;
         }
-        
+
         .footer-content {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 2rem;
         }
-        
+
         .footer-col {
             flex: 1;
             min-width: 250px;
         }
-        
+
         .footer-col h3 {
             margin-bottom: 1.5rem;
             font-size: 1.2rem;
             position: relative;
         }
-        
+
         .footer-col h3::after {
             content: '';
             position: absolute;
@@ -340,31 +346,31 @@
             bottom: -8px;
             left: 0;
         }
-        
+
         .footer-links {
             list-style: none;
         }
-        
+
         .footer-links li {
             margin-bottom: 0.8rem;
         }
-        
+
         .footer-links a {
             color: #aaa;
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .footer-links a:hover {
             color: white;
         }
-        
+
         .social-links {
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
         }
-        
+
         .social-icon {
             width: 40px;
             height: 40px;
@@ -377,11 +383,11 @@
             text-decoration: none;
             transition: background-color 0.3s;
         }
-        
+
         .social-icon:hover {
             background-color: var(--primary);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 2rem;
@@ -391,20 +397,21 @@
         }
 
         .copyright a:hover {
-            color: #fff; /* 滑過變白色，也可以換其他顏色 */
+            color: #fff;
+            /* 滑過變白色，也可以換其他顏色 */
             text-decoration: underline;
         }
-        
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .contact-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .nav-links {
                 display: none;
             }
@@ -419,19 +426,32 @@
             letter-spacing: 0.05em;
             animation: typing 5s steps(50, end), blink-caret 0.75s step-end infinite;
             max-width: 100%;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
             }
 
-            @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
             }
 
-            @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: white }
+            50% {
+                border-color: white
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -443,7 +463,8 @@
                     <li><a href="#research" data-i18n="nav.research">研究主題</a></li>
                     <li><a href="#team" data-i18n="nav.team">研究團隊</a></li>
                     <!-- <li><a href="#publications">發表論文</a></li> -->
-                    <li><a href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao" data-i18n="nav.pub">發表論文</a></li>
+                    <li><a href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao"
+                            data-i18n="nav.pub">發表論文</a></li>
                     <li><a href="#contact" data-i18n="nav.contact">聯絡我們</a></li>
                     <li><a href="#" id="langSwitch">English</a></li>
                 </ul>
@@ -466,7 +487,8 @@
     <section id="about" class="about">
         <div class="container">
             <h2 data-i18n="about.header">關於我們</h2>
-            <p data-i18n="about.description1">智慧型語言演算法實驗室 (Intelligent Language Algorithms Laboratory) 位於長庚大學人工智慧學系，成立於2025年二月。作為一個年輕且充滿活力的研究團隊，我們專注於自然語言處理的前沿研究，並發表頂尖的論文。</p>
+            <p data-i18n="about.description1">智慧型語言演算法實驗室 (Intelligent Language Algorithms Laboratory)
+                位於長庚大學人工智慧學系，成立於2025年二月。作為一個年輕且充滿活力的研究團隊，我們專注於自然語言處理的前沿研究，並發表頂尖的論文。</p>
             <!-- <p>我們的團隊結合了理論與實踐，旨在推動科學邊界並培養下一代科學家。我們的研究得到了[資助機構]的支持。</p> -->
             <p data-i18n="about.description2">我們的研究方法結合了深度類神經網路、大型語言模型，並與林口長庚醫院、國立陽明交通大學密切合作，以跨學科的視角解決複雜問題。</p>
         </div>
@@ -486,17 +508,19 @@
                         <!-- <p>此項目探索[研究主題]的新方法，旨在解決[問題或挑戰]。我們的創新方法結合了[技術或方法]，為該領域提供新視角。</p> -->
                     </div>
                 </div>
-                
+
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('src/imgs/directions/deep-learning.png');"></div>
+                    <div class="project-img" style="background-image: url('src/imgs/directions/deep-learning.png');">
+                    </div>
                     <div class="project-content">
                         <h3 data-i18n="research.llm">大型語言模型</h3>
                         <!-- <p>此項目聚焦於[研究主題]，通過[方法或技術]探索[現象或問題]。我們的初步結果顯示[簡要發現]，這將為[應用領域]帶來重大影響。</p> -->
                     </div>
                 </div>
-                
+
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('src/imgs/directions/donor-consent-form.png');"></div>
+                    <div class="project-img"
+                        style="background-image: url('src/imgs/directions/donor-consent-form.png');"></div>
                     <div class="project-content">
                         <h3 data-i18n="research.mednlp">Medical NLP</h3>
                         <!-- <p>在此項目中，我們研究[研究主題]，重點關注其在[應用領域]的潛在應用。結合[技術或理論]，我們開發了新的理解框架。</p> -->
@@ -517,29 +541,37 @@
                     <p data-i18n="team.PI_pos" class="member-title">助理教授 / 實驗室主持人</p>
                     <!-- <p>專長於[專業領域]，擁有[教育背景]。研究興趣包括[研究興趣]。</p> -->
                     <p>
-                        <a data-i18n="team.PI_page" href="https://mcps5601.github.io/about/" style="color: var(--primary); text-decoration: none;">
+                        <a data-i18n="team.PI_page" href="https://mcps5601.github.io/about/"
+                            style="color: var(--primary); text-decoration: none;">
                             <span style="font-size: 1.2rem;">&#127968;</span> 個人網頁
                         </a>
                         <a href="https://github.com/mcps5601" style="color: var(--primary); text-decoration: none;">
                             <span style="font-size: 1.2rem;">&#128187;</span> GitHub
                         </a>
-                </p>
+                    </p>
                 </div>
-                
+
                 <div class="team-member">
                     <img src="src/imgs/members/Yen-Kai-Chang.png" alt="專題生照片" class="member-img">
                     <h3 data-i18n="team.member1" class="member-name">張晏愷</h3>
                     <p data-i18n="team.member1_title" class="member-title">專題生 / 生醫系</p>
                     <!-- <p>專注於[研究方向]，探索[研究領域]中的創新解決方案。</p> -->
                 </div>
-                
+
                 <div class="team-member">
                     <img src="src/imgs/members/Chien-Feng-Wu.jpg" alt="專題生照片" class="member-img">
                     <h3 data-i18n="team.member2" class="member-name">吳建鋒</h3>
                     <p data-i18n="team.member2_title" class="member-title">專題生 / 醫學系</p>
                     <!-- <p>研究[研究主題]，特別關注[具體關注點]。具有[相關技能]背景。</p> -->
                 </div>
-                
+
+                <div class="team-member">
+                    <img src="src/imgs/members/Hung-Yi-Chang.jpeg" alt="專題生照片" class="member-img">
+                    <h3 data-i18n="team.member3" class="member-name">張鴻毅</h3>
+                    <p data-i18n="team.member3_title" class="member-title">專題生 / AI 系</p>
+                    <!-- <p>研究[研究主題]，特別關注[具體關注點]。具有[相關技能]背景。</p> -->
+                </div>
+
                 <!-- <div class="team-member">
                     <img src="/api/placeholder/150/150" alt="碩士生照片" class="member-img">
                     <h3 class="member-name">碩士生</h3>
@@ -593,7 +625,7 @@
                             <p data-i18n="contact.address">33302桃園市龜山區文化一路259號</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
                         <div>
@@ -601,7 +633,7 @@
                             <p>ilalab.cgu@gmail.com</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">📞</div>
                         <div>
@@ -611,14 +643,11 @@
                     </div>
                 </div>
                 <!-- 添加地圖容器 -->
-                <div class="map-container" style="width: 100%; height: 300px; margin-bottom: 3rem; border-radius: 8px; overflow: hidden;">
+                <div class="map-container"
+                    style="width: 100%; height: 300px; margin-bottom: 3rem; border-radius: 8px; overflow: hidden;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.973420228763!2d121.38676767625176!3d25.034976077815834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a72365212ebb%3A0xe09eed63a271b412!2z6ZW35bqa5aSn5a24566h55CG5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1744725892681!5m2!1szh-TW!2stw"
-                        width="600"
-                        height="450"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
@@ -663,7 +692,7 @@
                         <a href="#" class="social-icon">LI</a>
                     </div>
                 </div> -->
-                
+
                 <div class="footer-col">
                     <h3 data-i18n="links.quick_links">快速連結</h3>
                     <ul class="footer-links">
@@ -671,29 +700,37 @@
                         <li><a data-i18n="links.research" href="#research">研究主題</a></li>
                         <li><a data-i18n="links.team" href="#team">團隊成員</a></li>
                         <!-- <li><a href="#publications">發表論文</a></li> -->
-                        <li><a data-i18n="links.pub" href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao">發表論文</a></li>
+                        <li><a data-i18n="links.pub"
+                                href="https://scholar.google.com.tw/citations?user=TM4JxJkAAAAJ&hl=zh-TW&oi=ao">發表論文</a>
+                        </li>
                         <li><a data-i18n="links.contact" href="#contact">聯絡我們</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3 data-i18n="links.resources">相關資源</h3>
                     <ul class="footer-links">
                         <li><a data-i18n="links.uni_web" href="https://www.cgu.edu.tw/">大學官網</a></li>
                         <li><a data-i18n="links.dept_web" href="https://www.cgu.edu.tw/ai">系所網頁</a></li>
-                        <li><a data-i18n="links.academics" href="https://2024.aclweb.org/program/main_conference_papers/">學術資源</a></li>
+                        <li><a data-i18n="links.academics"
+                                href="https://2024.aclweb.org/program/main_conference_papers/">學術資源</a></li>
                         <!-- <li><a href="#">加入我們</a></li> -->
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p data-i18n="copyright.owner">&copy; 2025 智慧型語言演算法實驗室 版權所有</p>
-                <a href="https://www.flaticon.com/free-icons/natural-language-processing" title="natural language processing icons">Natural language processing icons created by Freepik - Flaticon</a><br>
-                <a href="https://www.flaticon.com/free-icons/deep-learning" title="deep learning icons">Deep learning icons created by Becris - Flaticon</a><br>
-                <a href="https://www.flaticon.com/free-icons/donor-consent-form" title="donor-consent-form icons">Donor-consent-form icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/natural-language-processing"
+                    title="natural language processing icons">Natural language processing icons created by Freepik -
+                    Flaticon</a><br>
+                <a href="https://www.flaticon.com/free-icons/deep-learning" title="deep learning icons">Deep learning
+                    icons created by Becris - Flaticon</a><br>
+                <a href="https://www.flaticon.com/free-icons/donor-consent-form"
+                    title="donor-consent-form icons">Donor-consent-form icons created by Freepik - Flaticon</a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
